@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f8;
+    color: #222;
+    min-height: 100vh;
+}
+header {
+    background: #e60505;
+    color: #fff;
+    text-align: center;
+    padding: 24px 16px;
+}
+.busca {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 24px 16px;
+}
+.busca input {
+    padding: 10px 14px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: min(320px, 70vw);
+    font-size: 1rem;
+}
+.busca button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #000000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.busca button:hover { background: #e60505; }
+#resultado { display: flex; justify-content: center; padding: 0 16px 32px; }
+.cartao {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+    padding: 24px;
+    text-align: center;
+    width: min(360px, 90vw);
+}
+.cartao img { width: 140px; image-rendering: pixelated; }
+.cartao h2 { text-transform: capitalize; margin: 8px 0; color: #7e22ce; }
+.tipo {
+    display: inline-block;
+    background: #ede9fe;
+    color: #000000;
+    border-radius: 999px;
+    padding: 2px 12px;
+    margin: 2px;
+    font-size: .85rem;
+}
+.erro {
+    background: #fef2f2;
+    color: #e91010d0;
+    border: 1px solid #feecca;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+}
+footer { text-align: center; padding: 16px; color: #777; font-size: .85rem; }

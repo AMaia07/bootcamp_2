@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pokédex — Bootcamp II</title>
+ <link rel="stylesheet" href="style.css"> <!-- caminho relativo, sem barra inicial! -->
 </head>
 <body>
-    
+ <header>
+ <h1>Pokédex</h1>
+ <p>Busque um Pokémon pelo nome ou número</p>
+ </header>
+ <main>
+ <section class="busca">
+ <input type="text" id="campo-busca" placeholder="Ex.: pikachu ou 25">
+ <button id="botao-buscar">Buscar</button>
+ </section>
+ <section id="resultado"></section> <!-- o JS vai preencher aqui -->
+ </main>
+ <footer>Dados: PokeAPI (pokeapi.co) · Projeto da disciplina Bootcamp II</footer>
+ <script src="script.js"></script>
+<!-- no fim do body: o HTML já existe quando o JS roda -->
 </body>
 </html>
