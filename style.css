@@ -35,6 +35,13 @@ header {
 }
 .busca button:hover { background: #e60505; }
 .busca button:disabled { background: #999; cursor: not-allowed; }
+.busca button.secundario {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+.busca button.secundario:hover { background: #f0f0f0; }
+.busca button.secundario:disabled { background: #eee; color: #999; border-color: #999; }
 #resultado { display: flex; justify-content: center; padding: 0 16px 32px; }
 .cartao {
     background: #fff;
@@ -46,6 +53,7 @@ header {
 }
 .cartao img { width: 140px; image-rendering: pixelated; }
 .cartao h2 { text-transform: capitalize; margin: 8px 0; color: #e60505; }
+.geracao { font-size: .85rem; color: #555; margin-bottom: 4px; }
 .tipo {
     display: inline-block;
     background: #ede9fe;
