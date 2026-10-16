@@ -19,9 +19,15 @@
  <button id="botao-aleatorio" class="secundario">Aleatório</button>
  </section>
  <section id="resultado" aria-live="polite"></section> <!-- o JS vai preencher aqui -->
+
+ <section class="time">
+ <h2>Meu time</h2>
+ <div id="lista-time" aria-live="polite"></div>
+ </section>
  </main>
  <footer>Dados: PokeAPI (pokeapi.co) · Projeto da disciplina Bootcamp II</footer>
- <script src="script.js"></script>
+ <script type="module" src="script.js"></script>
+<!-- type="module" é necessário para o "import" do Supabase funcionar -->
 <!-- no fim do body: o HTML já existe quando o JS roda -->
 </body>
 </html>

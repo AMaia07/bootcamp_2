@@ -72,3 +72,52 @@ header {
     text-align: center;
 }
 footer { text-align: center; padding: 16px; color: #777; font-size: .85rem; }
+
+/* ---------- Botão "Adicionar ao time" ---------- */
+.btn-adicionar {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #e60505;
+    color: #fff;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.btn-adicionar:hover { background: #b80404; }
+
+/* ---------- Seção "Meu time" ---------- */
+.time {
+    max-width: 500px;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+}
+.time h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000;
+}
+.cartao-time {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    padding: 10px 14px;
+    margin-bottom: 10px;
+}
+.cartao-time img { width: 48px; image-rendering: pixelated; }
+.cartao-time h3 { text-transform: capitalize; font-size: 1rem; color: #e60505; }
+.cartao-time p { font-size: .8rem; color: #555; }
+.cartao-time div { flex: 1; }
+.btn-remover {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.btn-remover:hover { background: #333; }
