@@ -116,8 +116,25 @@ function dispararBuscaAleatoria() {
 
 // ---------- CRUD do time (Supabase) ----------
 
-// CREATE — adiciona um Pokémon ao time
+// CREATE — adiciona um Pokémon ao time (evita duplicados)
 async function adicionarAoTime(pokemon) {
+    // Verifica se esse Pokémon já está no time antes de inserir
+    const { data: existentes, error: erroConsulta } = await supabase
+        .from("time")
+        .select("id")
+        .eq("numero", pokemon.numero);
+
+    if (erroConsulta) {
+        console.error(erroConsulta);
+        alert("Não foi possível verificar o time. Veja o console (F12) para detalhes.");
+        return;
+    }
+
+    if (existentes && existentes.length > 0) {
+        alert(`${pokemon.nome} já está no seu time!`);
+        return;
+    }
+
     const { error } = await supabase.from("time").insert({
         nome_pokemon: pokemon.nome,
         numero: pokemon.numero,
